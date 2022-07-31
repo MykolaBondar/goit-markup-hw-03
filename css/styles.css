@@ -8,7 +8,7 @@
   --sand-color: #f5f4fa;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--primary-color);
   background-color: var(--white-color);
 }
@@ -28,6 +28,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 .section {
   padding-top: 94px;
@@ -61,7 +62,7 @@ button {
 /* HEADER */
 .header,
 .navigation {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -75,12 +76,17 @@ button {
   justify-content: space-around;
   border-bottom: 1px solid #eeeeee;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .main-nav {
   display: flex;
   align-items: center;
 }
 .logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -147,6 +153,13 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -159,7 +172,6 @@ button {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 30px;
-  margin-top: 200px;
 }
 .hero-button {
   font-family: inherit;
@@ -172,7 +184,6 @@ button {
   color: var(--white-color);
   background-color: var(--btn-color);
   cursor: pointer;
-  margin-bottom: 200px;
   padding: 10px 32px;
 }
 .hero-button:hover,
@@ -213,10 +224,6 @@ button {
   margin-top: 10px;
 }
 
-.work {
-  display: flex;
-  justify-content: center;
-}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -256,7 +263,6 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .member-text {
@@ -265,7 +271,6 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  margin-bottom: 30px;
 }
 .team-list {
   display: flex;
@@ -275,6 +280,12 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-head {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* FOOTER */
 .footer,
@@ -297,11 +308,11 @@ button {
 .studio-logo {
   color: var(--white-color);
 }
-.footer > .footer {
-  margin-left: 215px;
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer > .logo {
-  margin-top: 60px;
+.footer-container > .logo {
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -342,14 +353,13 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-color);
-  margin-top: 20px;
 }
 .examples-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  margin-bottom: 4px;
+  margin-top: 4px;
 }
 .filter-list {
   display: flex;
