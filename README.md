@@ -1,2 +1,0 @@
-# github-tutorial
-Training repository
